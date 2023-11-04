@@ -18,9 +18,9 @@ public class Problem2 {
 
     public static void main(String[] args) {
         String[] students = {"Chris", "Sam", "Michael", "Cole", "Avery", "Corey", "Tina"};
-        int[] test1 = {100, 75, 97, 82, 94, 62, 96};
-        int[] test2 = {100, 81, 92, 84, 92, 64, 96};
-        int[] test3 = {100, 87, 90, 87, 95, 73, 96};
+        int[] test1 = {100, 99, 97, 82, 94, 62, 96};
+        int[] test2 = {100, 97, 92, 84, 92, 64, 96};
+        int[] test3 = {100, 94, 90, 87, 95, 73, 96};
     
         Student[] classroom = new Student[7];
 

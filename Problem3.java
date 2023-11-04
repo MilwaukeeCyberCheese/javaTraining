@@ -11,7 +11,5 @@ Output
 How many sodas did Tim drink on his extra thirsty day? */
 
 public class Problem3{
-    public static void main(String[] args) {
-        
-    }
+    
 }
