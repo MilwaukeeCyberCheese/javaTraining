@@ -21,10 +21,17 @@
 
 public class Problem1 {
 
-    public static boolean stickerCheck() {
-        
-        boolean stickerFit = false;
-        
+    public static boolean stickerCheck(int wc, int hc, int ws, int hs) {
+        boolean stickerFit;
+        int widthSpace = wc - ws;
+        int heightSpace = hc - hs;
+
+        if (widthSpace >= 1 && heightSpace >= 1) {
+            stickerFit = true;
+        } else {
+            stickerFit = false;
+        }
+
         return stickerFit;
     }
 }

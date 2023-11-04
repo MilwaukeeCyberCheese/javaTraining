@@ -15,8 +15,7 @@
 
 public class Problem2 {
 
-
-    public static void main(String[] args) {
+    public static char[] problem2() {
         String[] students = {"Chris", "Sam", "Michael", "Cole", "Avery", "Corey", "Tina"};
         int[] test1 = {100, 75, 97, 82, 94, 62, 96};
         int[] test2 = {100, 81, 92, 84, 92, 64, 96};
@@ -25,13 +24,15 @@ public class Problem2 {
         Student[] classroom = new Student[7];
 
         // Create Student objects to fill in class array
-        /*
-         * FILL IN
-         */
+        for (int i = 0; i < classroom.length; ++i) {
+            classroom[i] = new Student(students[i], test1[i], test2[i], test3[i]);
+        }
 
-        // Output the Name and Letter Grade for each student
-        /*
-         * FILL IN
-         */
+        // Enter the letter grade for each student into the gpa array
+        char[] gpa = new char[7];
+        for (int j = 0; j < classroom.length; j++) {
+            gpa[j] = classroom[j].average();
+        }
+        return gpa;
     }
 }
