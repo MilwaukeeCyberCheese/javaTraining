@@ -7,4 +7,13 @@
 
 public class Student {
     
+    // Fill in your Class Variables here
+
+    // Write your Class Constructor Here
+    public Student() {
+
+    }
+
+    // Write your Methods here
+
 }

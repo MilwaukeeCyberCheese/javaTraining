@@ -22,7 +22,7 @@ public class Problem2 {
         int[] test2 = {100, 81, 92, 84, 92, 64, 96};
         int[] test3 = {100, 87, 90, 87, 95, 73, 96};
     
-        Student[] class = new Student[7];
+        Student[] classroom = new Student[7];
 
         // Create Student objects to fill in class array
         /*
