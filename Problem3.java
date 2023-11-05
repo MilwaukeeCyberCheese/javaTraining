@@ -15,5 +15,7 @@ Output
 How many sodas did Tim drink on his extra thirsty day? */
 
 public class Problem3 {
-
+    public static int sodaAnswer(int e, int f, int c){
+        return 0;
+    }
 }
