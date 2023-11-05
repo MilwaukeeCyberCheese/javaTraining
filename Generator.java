@@ -9,7 +9,7 @@ public class Generator {
             int n = (int)(Math.random() * 100);
             myWriter.write(n + "\n");
             for (int i = 0; i < n; i++) {
-                int x = (int)(Math.random() * 100);
+                int x = (int)(Math.random() * 100) + 1;
                 myWriter.write(x + "\n");
                 for(int j = 0; j < x; j++) {
                     String cityName = "";
@@ -19,10 +19,10 @@ public class Generator {
                         cityName += (char)ascii;
                     }
                     //0.4 chance of being written twice
-                    if(Math.random() < 0.4) {
+                    if(Math.random() < 0.4 && j < x - 1) {
                         myWriter.write(cityName + "\n");
                         j++;
-                    } else if(Math.random() < 0.1) {
+                    } else if(Math.random() < 0.1 && j < x - 2) {
                         myWriter.write(cityName + "\n" + cityName + "\n");
                         j += 2;
                     }

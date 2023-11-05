@@ -20,9 +20,7 @@
  * characters.
  * 
  * Output
- * For each test case, simply output a single line containing a single integer
- * that is the number of distinct cities that Alice has visited on her work
- * trips.
+ * Output an array the number of distinct cities Alice has visited, in order of the test case.
  */
 
 /*
@@ -33,5 +31,7 @@
  */
 
  public class Problem4{
-    
+    public static int[] Alice(){
+        return new int[1];
+    }
  }
