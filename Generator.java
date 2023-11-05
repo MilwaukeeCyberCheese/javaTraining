@@ -14,12 +14,13 @@ public class Generator {
                     p += (int)(Math.random() * b);
                 }
                 String m = "";
-                int mLength = (int)(Math.random() * 9);
+                int mLength = (int)(Math.random() * 8) + 1;
                 for(int j = 0; j < mLength; j++){
                     m += (int)(Math.random() * (b - 1)) + 1;
                 }
                 myWriter.write(b + " " + p + " " + m + "\n");
             }
+            myWriter.write("0");
             myWriter.close();
             System.out.println("Successfully wrote to the file.");
         } catch (IOException e) {
