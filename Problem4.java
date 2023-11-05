@@ -29,7 +29,7 @@
  * Hints:
  * 
  * 1. Use a linked list to keep track of the cities Alice has visited so far.
- * 2. Use the Scanner class to read the input.
+ * 2. Use the Scanner class to read the input from a file.
  */
 
  public class Problem4{

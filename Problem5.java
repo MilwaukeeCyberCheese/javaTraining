@@ -25,7 +25,5 @@ import java.util.Scanner;
     * 2. You can use the Scanner class to read input from a file.
   */
  public class Problem5{
-    public static void main(String[] args) {
-        
-    }
+    
  }
