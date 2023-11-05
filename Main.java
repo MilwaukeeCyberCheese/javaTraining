@@ -1,6 +1,3 @@
-import java.io.File;
-import java.util.Scanner;
-
 /*
  * Main class to check your problems
  * 
