@@ -1,3 +1,7 @@
+import java.io.File;
+import java.util.LinkedList;
+import java.util.Scanner;
+
 /*
  * Main class to check your problems
  * 
@@ -38,12 +42,34 @@ public class Main {
     }
 
     public static boolean problem4Check() {
-        int[] solution = { 28, 29, 10, 7, 13, 16, 20, 18, 19, 25, 62, 5, 59, 49, 51, 62, 40, 56, 54, 57, 49, 19, 21, 36, 10, 5, 20, 60, 31, 48, 50, 30, 38, 41, 65, 2, 19, 1, 54, 12, 49, 27, 54, 30, 57, 25, 15, 25, 36, 23, 66, 10, 21, 59, 8, 41, 30, 30, 27, 31, 58, 34, 5, 17, 3, 47, 36, 34, 58, 28, 21, 58, 48, 4, 25, 14, 55, 15 };
+        int[] solution = { 28, 29, 10, 7, 13, 16, 20, 18, 19, 25, 62, 5, 59, 49, 51, 62, 40, 56, 54, 57, 49, 19, 21, 36,
+                10, 5, 20, 60, 31, 48, 50, 30, 38, 41, 65, 2, 19, 1, 54, 12, 49, 27, 54, 30, 57, 25, 15, 25, 36, 23, 66,
+                10, 21, 59, 8, 41, 30, 30, 27, 31, 58, 34, 5, 17, 3, 47, 36, 34, 58, 28, 21, 58, 48, 4, 25, 14, 55,
+                15 };
 
         int[] answer = Problem4.Alice();
 
         return solution.equals(answer);
 
+    }
+
+    public static boolean problem5Check() {
+        LinkedList<Integer> solution = new LinkedList<Integer>();
+
+        File file = new File("solutions/solution5.txt");
+        try {
+            Scanner in = new Scanner(file);
+            while (in.hasNextLine()) {
+                solution.add(in.nextInt());
+            }
+            in.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        LinkedList<Integer> answer = Problem5.bases();
+
+        return solution.equals(answer);
     }
 
     public static void main(String[] args) {

@@ -1,3 +1,4 @@
+import java.util.LinkedList;
 import java.util.Scanner;
 
 /*
@@ -14,9 +15,8 @@ import java.util.Scanner;
  * The last case is followed by a line containing 0.
  * 
  * Output
- * For each test case, print a line giving p mod m
- * as a base-b
- * integer.
+ * Return a linked list containing p mod m
+ * as a base-b integer for each test case
  */
 
  /*
@@ -25,5 +25,7 @@ import java.util.Scanner;
     * 2. You can use the Scanner class to read input from a file.
   */
  public class Problem5{
-    
+    public static LinkedList<Integer> bases(){
+      return new LinkedList();
+    }
  }
