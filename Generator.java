@@ -4,22 +4,17 @@ import java.io.IOException; // Import the IOException class to handle errors
 public class Generator {
     public static void main(String[] args) {
         try {
-            FileWriter myWriter = new FileWriter("testInput/input5.txt");
-            //generate test for problem 5
-            for(int i = 0; i < 999; i++){
-                int b = (int)(Math.random() * 9) + 2;
-                String p = "";
-                int pLength = (int)(Math.random() * 1000);
-                for(int j = 0; j < pLength; j++){
-                    p += (int)(Math.random() * b);
-                }
-                String m = "";
-                int mLength = (int)(Math.random() * 9);
-                for(int j = 0; j < mLength; j++){
-                    m += (int)(Math.random() * b);
-                }
-                myWriter.write(b + " " + p + " " + m + "\n");
+            FileWriter myWriter = new FileWriter("testInput/input3.txt");
+            //generate test for problem 3
+            for(int i = 0; i < 100; i++){
+                int e = (int)(Math.random() * 1000);
+                int f = (int)(Math.random() * 1000);
+                int c = (int)(Math.random() * 2000) + 2;
+                myWriter.write(e + " " + f + " " + c + "\n");
             }
+            
+           
+            
             myWriter.close();
             System.out.println("Successfully wrote to the file.");
         } catch (IOException e) {
