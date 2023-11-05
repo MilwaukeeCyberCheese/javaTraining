@@ -4,15 +4,34 @@ import java.io.IOException; // Import the IOException class to handle errors
 public class Generator {
     public static void main(String[] args) {
         try {
-            FileWriter myWriter = new FileWriter("testInput/input3.txt");
-            //generate test for problem 3
-            for(int i = 0; i < 100; i++){
-                int e = (int)(Math.random() * 1000);
-                int f = (int)(Math.random() * 1000);
-                int c = (int)(Math.random() * 2000) + 2;
-                myWriter.write(e + " " + f + " " + c + "\n");
+            FileWriter myWriter = new FileWriter("testInput/input4.txt");
+            //generate test for problem 4
+            int n = (int)(Math.random() * 100);
+            myWriter.write(n + "\n");
+            for (int i = 0; i < n; i++) {
+                int x = (int)(Math.random() * 100);
+                myWriter.write(x + "\n");
+                for(int j = 0; j < x; j++) {
+                    String cityName = "";
+                    int nameLength = (int)(Math.random() * 19) + 1;
+                    for(int k = 0; k < nameLength; k++) {
+                        int ascii = (int)(Math.random() * 26) + 97;
+                        cityName += (char)ascii;
+                    }
+                    //0.4 chance of being written twice
+                    if(Math.random() < 0.4) {
+                        myWriter.write(cityName + "\n");
+                        j++;
+                    } else if(Math.random() < 0.1) {
+                        myWriter.write(cityName + "\n" + cityName + "\n");
+                        j += 2;
+                    }
+
+                    myWriter.write(cityName + "\n");
+                   
+                    
+                }
             }
-            
            
             
             myWriter.close();
