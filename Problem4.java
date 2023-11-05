@@ -6,7 +6,7 @@
  * the number of cities she has visited at least once.
  * 
  * Input
- * The first line of input contains a single positive integer T <= 50 indicating the
+ * The first line of input contains a single positive integer T <= 100 indicating the
  * number of test cases. The first line of each test case also contains a single
  * positive integer indicating the number of work trips Alice has taken so far.
  * The following lines describe these trips. The nth such line simply contains
