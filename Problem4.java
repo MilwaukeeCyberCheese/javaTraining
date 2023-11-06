@@ -1,3 +1,6 @@
+import java.io.File;
+import java.util.Scanner;
+
 /*
  * Alice travels a lot for her work. Each time she travels, she visits a single
  * city before returning home.
@@ -30,8 +33,16 @@
  * 2. Use the Scanner class to read the input from a file.
  */
 
- public class Problem4{
-    public static int[] Alice(){
+public class Problem4 {
+    public static int[] Alice() {
+        File file = new File("PATH_TO_FILE");
+        try {
+            Scanner sc = new Scanner(file);
+            sc.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
         return new int[1];
     }
- }
+}

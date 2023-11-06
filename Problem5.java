@@ -1,5 +1,4 @@
 import java.util.LinkedList;
-import java.util.Scanner;
 
 /*
  * Given a base b and two non-negative base-b integers p and m, compute p mod m
@@ -22,10 +21,11 @@ import java.util.Scanner;
  /*
   * HINTS:
     * 1. You can use the BigInteger class to represent arbitrarily large integers.
-    * 2. You can use the Scanner class to read input from a file.
+    * 2. You can use the Scanner class to read input from a file as in problem 4
+    * 3. You can convert a BigInteger to a base-b integer using the toString(int radix) method
   */
  public class Problem5{
     public static LinkedList<Integer> bases(){
-      return new LinkedList();
+      return new LinkedList<Integer>();
     }
  }
