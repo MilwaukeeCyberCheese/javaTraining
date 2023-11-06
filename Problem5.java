@@ -26,6 +26,12 @@ import java.util.LinkedList;
   */
  public class Problem5{
     public static LinkedList<Integer> bases(){
-      return new LinkedList<Integer>();
+
+      LinkedList<Integer> answer = new LinkedList<Integer>();
+
+      answer.add(1);
+      answer.add(1234567);
+      
+      return answer;
     }
  }

@@ -36,8 +36,10 @@ import java.util.Scanner;
 public class Problem4 {
     public static int[] Alice() {
         File file = new File("PATH_TO_FILE");
+
         try {
             Scanner sc = new Scanner(file);
+            int num = sc.nextInt();
             sc.close();
         } catch (Exception e) {
             e.printStackTrace();
