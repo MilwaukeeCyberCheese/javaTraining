@@ -1,4 +1,5 @@
 import java.io.File;
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Scanner;
 
@@ -9,15 +10,31 @@ import java.util.Scanner;
 
 public class Main {
 
-    /*
-     * public static boolean problem1Check() {
-     * 
-     * }
-     * 
-     * public static boolean problem2Check() {
-     * 
-     * }
-     */
+    public static boolean problem1Check() {
+
+        int[] test1 = {30, 30, 27, 27};
+        int[] test2 = {30, 35, 30, 35};
+
+        boolean test1Check = Problem1.stickerCheck(test1[0], test1[1], test1[2], test1[3]);
+        boolean test2Check = Problem1.stickerCheck(test2[0], test2[1], test2[2], test2[3]);
+
+        if (test1Check && !test2Check) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public static boolean problem2Check() {
+        char[] letterGrades = Problem2.problem2();
+        char[] rubric = {'A', 'B', 'A', 'B', 'A', 'D', 'A'};
+
+        if (Arrays.equals(letterGrades, rubric)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 
     public static boolean problem3Check() {
         int[] test = { 9, 0, 3 };
@@ -73,6 +90,30 @@ public class Main {
     }
 
     public static void main(String[] args) {
-
+        if(problem1Check()){
+            System.out.println("You've succesfully completed problem 1");
+        } else{
+            System.out.println("Problem 1 does not pass all test cases. Try again!");
+        }
+        if(problem2Check()){
+            System.out.println("You've succesfully completed problem 2");
+        } else{
+            System.out.println("Problem 2 does not pass all test cases. Try again!");
+        }
+        if(problem3Check()){
+            System.out.println("You've succesfully completed problem 3");
+        } else{
+            System.out.println("Problem 3 does not pass all test cases. Try again!");
+        }
+        if(problem4Check()){
+            System.out.println("You've succesfully completed problem 4");
+        } else{
+            System.out.println("Problem 4 does not pass all test cases. Try again!");
+        }
+        if(problem5Check()){
+            System.out.println("You've succesfully completed problem 5");
+        } else{
+            System.out.println("Problem 5 does not pass all test cases. Try again!");
+        }
     }
 }

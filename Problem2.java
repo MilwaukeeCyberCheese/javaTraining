@@ -16,7 +16,7 @@
 public class Problem2 {
 
 
-    public static void main(String[] args) {
+    public static char[] problem2() {
         String[] students = {"Chris", "Sam", "Michael", "Cole", "Avery", "Corey", "Tina"};
         int[] test1 = {100, 99, 97, 82, 94, 62, 96};
         int[] test2 = {100, 97, 92, 84, 92, 64, 96};
@@ -33,5 +33,7 @@ public class Problem2 {
         /*
          * FILL IN
          */
+
+         return new char[1];
     }
 }
