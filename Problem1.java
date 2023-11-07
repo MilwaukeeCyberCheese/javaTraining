@@ -22,7 +22,7 @@
 public class Problem1 {
 
     public static boolean stickerCheck(int wc, int hc, int ws, int hs) {
-        boolean stickerFit;
+        boolean stickerFit = false;
         int widthSpace = wc - ws;
         int heightSpace = hc - hs;
 

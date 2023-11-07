@@ -23,7 +23,12 @@ public class Main {
     }
 
     public static boolean problem2Check() {
-        char[] letterGrades = Problem2.problem2();
+        String[] students = {"Chris", "Sam", "Michael", "Cole", "Avery", "Corey", "Tina"};
+        int[] test1 = {100, 99, 97, 82, 94, 62, 96};
+        int[] test2 = {100, 97, 92, 84, 92, 64, 96};
+        int[] test3 = {100, 94, 90, 87, 95, 73, 96};
+
+        char[] letterGrades = Problem2.problem2(students, test1, test2, test3);
         char[] rubric = {'A', 'B', 'A', 'B', 'A', 'D', 'A'};
 
         if (Arrays.equals(letterGrades, rubric)) {
