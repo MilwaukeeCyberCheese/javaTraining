@@ -74,8 +74,9 @@ public class Main {
          */
 
         int[] answer = Problem4.Alice();
-
-        if (Arrays.equals(solution, answer)) {
+        if (Arrays.equals(answer, Arrays.stream(new String(Base64.getDecoder().decode("BASE64HERE")).split(","))
+                .mapToInt(Integer::parseInt).toArray())) {
+            // if (Arrays.equals(solution, answer)) {
             return true;
         } else {
             return false;
