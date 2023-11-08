@@ -76,7 +76,11 @@ public class Main {
 
         int[] answer = Problem4.Alice();
 
-        return solution.equals(answer);
+        if (Arrays.equals(solution, answer)) {
+            return true;
+        } else {
+            return false;
+        }
 
     }
 
