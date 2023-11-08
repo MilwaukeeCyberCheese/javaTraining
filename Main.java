@@ -108,25 +108,25 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        if(problem1Check()){
-        System.out.println("You've succesfully completed problem 1");
-        } else{
-        System.out.println("Problem 1 does not pass all test cases. Try again!");
+        if (problem1Check()) {
+            System.out.println("You've succesfully completed problem 1");
+        } else {
+            System.out.println("Problem 1 does not pass all test cases. Try again!");
         }
         if (problem2Check()) {
-        System.out.println("You've succesfully completed problem 2");
+            System.out.println("You've succesfully completed problem 2");
         } else {
-        System.out.println("Problem 2 does not pass all test cases. Try again!");
+            System.out.println("Problem 2 does not pass all test cases. Try again!");
         }
-        if(problem3Check()){
-        System.out.println("You've succesfully completed problem 3");
-        } else{
-        System.out.println("Problem 3 does not pass all test cases. Try again!");
+        if (problem3Check()) {
+            System.out.println("You've succesfully completed problem 3");
+        } else {
+            System.out.println("Problem 3 does not pass all test cases. Try again!");
         }
-        if(problem4Check()){
-        System.out.println("You've succesfully completed problem 4");
-        } else{
-        System.out.println("Problem 4 does not pass all test cases. Try again!");
+        if (problem4Check()) {
+            System.out.println("You've succesfully completed problem 4");
+        } else {
+            System.out.println("Problem 4 does not pass all test cases. Try again!");
         }
         if (problem5Check()) {
             System.out.println("You've succesfully completed problem 5");
