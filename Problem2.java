@@ -15,7 +15,6 @@
 
 public class Problem2 {
 
-
     public static char[] problem2(String[] students, int[] test1, int[] test2, int[] test3) {
     
         Student[] classroom = new Student[students.length];
@@ -32,5 +31,6 @@ public class Problem2 {
          */
 
          return gpa;
+
     }
 }

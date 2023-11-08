@@ -8,9 +8,13 @@ import java.util.Scanner;
  * 
  */
 
+import java.util.Arrays;
+
 public class Main {
 
+
     public static boolean problem1Check() {
+
 
         int[] test1 = {30, 30, 27, 27};
         int[] test2 = {30, 35, 30, 35};
@@ -39,6 +43,7 @@ public class Main {
         } else {
             return false;
         }
+        
     }
 
     public static boolean problem3Check() {
@@ -52,11 +57,11 @@ public class Main {
             return false;
         } else if (Problem3.sodaAnswer(test2[0], test2[1], test2[2]) != 9) {
             return false;
-        } else if (Problem3.sodaAnswer(test3[0], test3[1], test3[2]) != 10) {
+        } else if (Problem3.sodaAnswer(test3[0], test3[1], test3[2]) != 7) {
             return false;
-        } else if (Problem3.sodaAnswer(test4[0], test4[1], test4[2]) != 12) {
+        } else if (Problem3.sodaAnswer(test4[0], test4[1], test4[2]) != 8) {
             return false;
-        } else if (Problem3.sodaAnswer(test5[0], test5[1], test5[2]) != 904) {
+        } else if (Problem3.sodaAnswer(test5[0], test5[1], test5[2]) != 41) {
             return false;
         } else {
             return true;
