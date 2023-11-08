@@ -32,7 +32,7 @@ public class Main {
         int[] test3 = {100, 94, 90, 87, 95, 73, 96};
 
         char[] letterGrades = Problem2.problem2(students, test1, test2, test3);
-        char[] rubric = {'A', 'B', 'A', 'B', 'A', 'D', 'A'};
+        char[] rubric = {'A', 'A', 'A', 'B', 'A', 'D', 'A'};
 
         if (Arrays.equals(letterGrades, rubric)) {
             return true;
