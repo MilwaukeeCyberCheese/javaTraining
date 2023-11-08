@@ -59,24 +59,13 @@ public class Main {
     }
 
     public static boolean problem4Check() {
-        int[] solution = { 28, 29, 10, 7, 13, 16, 20, 18, 19, 25, 62, 5, 59, 49, 51, 62, 40, 56, 54, 57, 49, 19, 21, 36,
-                10, 5, 20, 60, 31, 48, 50, 30, 38, 41, 65, 2, 19, 1, 54, 12, 49, 27, 54, 30, 57, 25, 15, 25, 36, 23, 66,
-                10, 21, 59, 8, 41, 30, 30, 27, 31, 58, 34, 5, 17, 3, 47, 36, 34, 58, 28, 21, 58, 48, 4, 25, 14, 55,
-                15 };
-        // Answer may be this one?
-        /*
-         * int[] solution = { 28, 29, 10, 7, 13, 16, 20, 19, 20, 26, 63, 5, 61, 49, 52,
-         * 63, 40, 61, 55, 59, 51, 20, 24, 38,
-         * 10, 5, 20, 66, 34, 48, 51, 34, 42, 43, 68, 2, 19, 1, 56, 12, 53, 29, 61, 32,
-         * 58, 27, 16, 28, 40, 24, 71,
-         * 12, 24, 60, 8, 45, 32, 30, 28, 38, 61, 35, 6, 17, 3, 49, 39, 34, 60, 28, 23,
-         * 60, 52, 4, 25, 16, 60, 16};
-         */
 
         int[] answer = Problem4.Alice();
-        if (Arrays.equals(answer, Arrays.stream(new String(Base64.getDecoder().decode("BASE64HERE")).split(","))
+        if (Arrays.equals(answer, Arrays.stream(new String(Base64.getDecoder().decode(
+                "MjgsMjksMTAsNywxMywxNiwyMCwxOSwyMCwyNiw2Myw1LDYxLDQ5LDUyLAo2Myw0MCw2MSw1NSw1OSw1MSwyMCwyNCwzOCwKMTAsNSwyMCw2NiwzNCw0OCw1MSwzNCw0Miw0Myw2OCwyLDE5LDEsNTYsMTIsNTMsMjksNjEsMzIsCjU4LDI3LDE2LDI4LDQwLDI0LDcxLAoxMiwyNCw2MCw4LDQ1LDMyLDMwLDI4LDM4LDYxLDM1LDYsMTcsMyw0OSwzOSwzNCw2MCwyOCwyMywKNjAsNTIsNCwyNSwxNiw2MCwxNg=="))
+                .split(","))
                 .mapToInt(Integer::parseInt).toArray())) {
-            // if (Arrays.equals(solution, answer)) {
+
             return true;
         } else {
             return false;
