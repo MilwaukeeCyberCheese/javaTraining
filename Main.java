@@ -47,10 +47,12 @@ public class Main {
     public static boolean problem3Check() {
 
         int[][] tests = { { 9, 0, 3 }, { 5, 5, 2 }, { 7, 8, 3 }, { 9, 9, 3 }, { 840, 248, 27 } };
-        int[] answers = {4, 9, 7, 8, 41};
+        
+        int[] answers = Arrays.stream(new String(Base64.getDecoder().decode("NCw5LDcsOCw0MQ==")).split(",")).mapToInt(Integer::parseInt).toArray();
 
         for(int i = 0; i < tests.length; i++){
-            if(Problem3.sodaAnswer(tests[i][0], tests[i][1], tests[i][2]) != answers[i]){
+            
+            if(Problem3.sodaAnswer(tests[i][0], tests[i][1], tests[i][2]) == answers[i]){
                 return true;
             }
         }
@@ -103,16 +105,16 @@ public class Main {
         // } else{
         // System.out.println("Problem 1 does not pass all test cases. Try again!");
         // }
-        if (problem2Check()) {
-            System.out.println("You've succesfully completed problem 2");
-        } else {
-            System.out.println("Problem 2 does not pass all test cases. Try again!");
-        }
-        // if(problem3Check()){
-        // System.out.println("You've succesfully completed problem 3");
-        // } else{
-        // System.out.println("Problem 3 does not pass all test cases. Try again!");
+        // if (problem2Check()) {
+        //     System.out.println("You've succesfully completed problem 2");
+        // } else {
+        //     System.out.println("Problem 2 does not pass all test cases. Try again!");
         // }
+        if(problem3Check()){
+        System.out.println("You've succesfully completed problem 3");
+        } else{
+        System.out.println("Problem 3 does not pass all test cases. Try again!");
+        }
         // if(problem4Check()){
         // System.out.println("You've succesfully completed problem 4");
         // } else{
