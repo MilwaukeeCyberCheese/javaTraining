@@ -46,7 +46,7 @@ public class Problem4 {
             for ( int i = 0; i < num; ++i) {
                 int trips = sc.nextInt();
                 LinkedList<String> cities = new LinkedList<String>();
-                String throwaway = sc.nextLine();
+                sc.nextLine(); //throwaway 
 
                 // Use index of method instead
                 for (int j = 0; j < trips; ++j) {
