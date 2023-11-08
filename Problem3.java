@@ -9,7 +9,7 @@ Input
 Three non-negative integers e f and c, 
 where e < 1000 equals the number of empty soda bottles in Tim’s possession at the start of the day, 
  f < 1000 the number of empty soda bottles found during the day, 
- and 2 <= c 2000 the number of empty bottles required to buy a new soda.
+ and 2 <= c < 2000 the number of empty bottles required to buy a new soda.
 
 Output
 How many sodas did Tim drink on his extra thirsty day? */
