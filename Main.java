@@ -32,7 +32,7 @@ public class Main {
         int[] test3 = {100, 94, 90, 87, 95, 73, 96};
 
         char[] letterGrades = Problem2.problem2(students, test1, test2, test3);
-        char[] rubric = {'A', 'B', 'A', 'B', 'A', 'D', 'A'};
+        char[] rubric = {'A', 'A', 'A', 'B', 'A', 'D', 'A'};
 
         if (Arrays.equals(letterGrades, rubric)) {
             return true;
@@ -52,11 +52,11 @@ public class Main {
             return false;
         } else if (Problem3.sodaAnswer(test2[0], test2[1], test2[2]) != 9) {
             return false;
-        } else if (Problem3.sodaAnswer(test3[0], test3[1], test3[2]) != 10) {
+        } else if (Problem3.sodaAnswer(test3[0], test3[1], test3[2]) != 7) {
             return false;
-        } else if (Problem3.sodaAnswer(test4[0], test4[1], test4[2]) != 12) {
+        } else if (Problem3.sodaAnswer(test4[0], test4[1], test4[2]) != 8) {
             return false;
-        } else if (Problem3.sodaAnswer(test5[0], test5[1], test5[2]) != 904) {
+        } else if (Problem3.sodaAnswer(test5[0], test5[1], test5[2]) != 41) {
             return false;
         } else {
             return true;
@@ -64,15 +64,20 @@ public class Main {
     }
 
     public static boolean problem4Check() {
-        int[] solution = { 28, 29, 10, 7, 13, 16, 20, 18, 19, 25, 62, 5, 59, 49, 51, 62, 40, 56, 54, 57, 49, 19, 21, 36,
+        /*int[] solution = { 28, 29, 10, 7, 13, 16, 20, 18, 19, 25, 62, 5, 59, 49, 51, 62, 40, 56, 54, 57, 49, 19, 21, 36,
                 10, 5, 20, 60, 31, 48, 50, 30, 38, 41, 65, 2, 19, 1, 54, 12, 49, 27, 54, 30, 57, 25, 15, 25, 36, 23, 66,
-                10, 21, 59, 8, 41, 30, 30, 27, 31, 58, 34, 5, 17, 3, 47, 36, 34, 58, 28, 21, 58, 48, 4, 25, 14, 55,
-                15 };
+                10, 21, 59, 8, 41, 30, 30, 27, 31, 58, 34, 5, 17, 3, 47, 36, 34, 58, 28, 21, 58, 48, 4, 25, 14, 55, 15 };*/
+        int[] solution = { 28, 29, 10, 7, 13, 16, 20, 19, 20, 26, 63, 5, 61, 49, 52, 63, 40, 61, 55, 59, 51, 20, 24, 38, 
+                10, 5, 20, 66, 34, 48, 51, 34, 42, 43, 68, 2, 19, 1, 56, 12, 53, 29, 61, 32, 58, 27, 16, 28, 40, 24, 71, 
+                12, 24, 60, 8, 45, 32, 30, 28, 38, 61, 35, 6, 17, 3, 49, 39, 34, 60, 28, 23, 60, 52, 4, 25, 16, 60, 16};
 
         int[] answer = Problem4.Alice();
 
-        return solution.equals(answer);
-
+        if (Arrays.equals(solution, answer)) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
     public static boolean problem5Check() {

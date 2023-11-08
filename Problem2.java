@@ -17,7 +17,7 @@ public class Problem2 {
 
     public static char[] problem2(String[] students, int[] test1, int[] test2, int[] test3) {
     
-        Student[] classroom = new Student[7];
+        Student[] classroom = new Student[students.length];
 
         // Create Student objects to fill in class array
         for (int i = 0; i < classroom.length; ++i) {
@@ -25,7 +25,7 @@ public class Problem2 {
         }
 
         // Enter the letter grade for each student into the gpa array
-        char[] gpa = new char[7];
+        char[] gpa = new char[students.length];
         for (int j = 0; j < classroom.length; j++) {
             gpa[j] = classroom[j].average();
         }

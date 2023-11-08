@@ -1,5 +1,7 @@
 import java.io.File;
 import java.util.Scanner;
+import java.util.LinkedList;
+import java.util.Iterator; 
 
 /*
  * Alice travels a lot for her work. Each time she travels, she visits a single
@@ -35,12 +37,46 @@ import java.util.Scanner;
 
 public class Problem4 {
     public static int[] Alice() {
-        File file = new File("PATH_TO_FILE");
-
+        File file = new File("testInput/input4.txt");
+        
         try {
             Scanner sc = new Scanner(file);
             int num = sc.nextInt();
+            int[] citiesVisited = new int[num];
+            for ( int i = 0; i < num; ++i) {
+                int trips = sc.nextInt();
+                LinkedList<String> cities = new LinkedList<String>();
+                String throwaway = sc.nextLine();
+
+                // Use index of method instead
+                for (int j = 0; j < trips; ++j) {
+                    String city = sc.nextLine();
+                    int index = cities.indexOf(city);
+                    if (index == -1) {
+                        cities.addLast(city);
+                    }
+
+                    /*Iterator it = cities.iterator();
+                    String city = sc.nextLine();
+                    boolean newCity = true;
+
+                    while(it.hasNext()) {
+                        String compare = it.next().toString();
+                        if (compare.equals(city)) {
+                            newCity = false;
+                            break;
+                        }
+                    }
+                    if (newCity) {
+                        cities.addLast(city);
+                    }*/
+                }
+                citiesVisited[i] = cities.size();
+            }            
+
             sc.close();
+
+            return citiesVisited;
         } catch (Exception e) {
             e.printStackTrace();
         }
