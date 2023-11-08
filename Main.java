@@ -45,20 +45,14 @@ public class Main {
     public static boolean problem3Check() {
 
         int[][] tests = { { 9, 0, 3 }, { 5, 5, 2 }, { 7, 8, 3 }, { 9, 9, 3 }, { 840, 248, 27 } };
+        int[] answers = {4, 9, 7, 8, 41};
 
-        if (Problem3.sodaAnswer(tests[0][0], tests[0][1], tests[0][2]) != 4) {
-            return false;
-        } else if (Problem3.sodaAnswer(tests[1][0], tests[1][1], tests[1][2]) != 9) {
-            return false;
-        } else if (Problem3.sodaAnswer(tests[2][0], tests[2][1], tests[2][2]) != 7) {
-            return false;
-        } else if (Problem3.sodaAnswer(tests[3][0], tests[3][1], tests[3][2]) != 8) {
-            return false;
-        } else if (Problem3.sodaAnswer(tests[4][0], tests[4][1], tests[4][2]) != 41) {
-            return false;
-        } else {
-            return true;
+        for(int i = 0; i < tests.length; i++){
+            if(Problem3.sodaAnswer(tests[i][0], tests[i][1], tests[i][2]) != answers[i]){
+                return true;
+            }
         }
+        return false;
     }
 
     public static boolean problem4Check() {
