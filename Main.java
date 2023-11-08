@@ -9,7 +9,6 @@ import java.util.Scanner;
  * 
  */
 
-import java.util.Arrays;
 
 public class Main {
 
@@ -31,13 +30,16 @@ public class Main {
     }
 
     public static boolean problem2Check() {
-        String solutionEncoded = "QUJBQkFEQQ==";
-        
-        // char[] letterGrades = Problem2.problem2();
-        char[] letterGrades = {'A', 'B', "A", 'B', "A", 'D', 'A'};
+        String[] students = {"Chris", "Sam", "Michael", "Cole", "Avery", "Corey", "Tina"};
+        int[] test1 = {100, 99, 97, 82, 94, 62, 96};
+        int[] test2 = {100, 97, 92, 84, 92, 64, 96};
+        int[] test3 = {100, 94, 90, 87, 95, 73, 96};
+
+
+        char[] letterGrades = Problem2.problem2(students, test1, test2, test3);
         
 
-        if (Arrays.equals(letterGrades, Base64.getDecoder().decode(solutionEncoded))) {
+        if (Arrays.equals(letterGrades, new String(Base64.getDecoder().decode("QUJBQkFEQQ==")).toCharArray())) {
             return true;
         } else {
             return false;
