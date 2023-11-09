@@ -15,8 +15,13 @@ public class Main {
 
         int[] test1 = { 30, 30, 27, 27 };
         int[] test2 = { 30, 35, 30, 35 };
+        int[] test3 = { 30, 30, 29, 29 };
+        int[] test4 = { 923, 234, 900, 233 };
 
-        if (Problem1.stickerCheck(test1[0], test1[1], test1[2], test1[3]) && !Problem1.stickerCheck(test2[0], test2[1], test2[2], test2[3])) {
+        if (Problem1.stickerCheck(test1[0], test1[1], test1[2], test1[3])
+                && !Problem1.stickerCheck(test2[0], test2[1], test2[2], test2[3])
+                && !Problem1.stickerCheck(test3[0], test3[1], test3[2], test3[3])
+                && !Problem1.stickerCheck(test4[0], test4[1], test4[2], test4[3])) {
             return true;
         } else {
             return false;
